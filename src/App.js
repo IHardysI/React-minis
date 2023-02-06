@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import FactsMain from "./components/Facts-main"
+import FactsNavbar from "./components/Facts-navbar"
+import React from "react"
+// import FactsStyle from "./Facts-style.css"
+import FactsFooter from "./components/Facts-footer"
+import CardStyle from "./Card-style.css"
+import CardInfo from "./components/Card-info"
+import CardMain from "./components/Card-main"
+import Footer from "./components/Card-footer"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <>
+            <CardInfo/>
+            <CardMain/>
+            <Footer/>
+        </>
+    )
 }
 
-export default App;
+export default App
